@@ -1,4 +1,6 @@
 .news {
+	position: relative;
+	z-index: -1;
 
 	&__container {
 		max-width: 600px;
@@ -23,6 +25,18 @@
 			&:last-child {
 				margin-right: 0;
 			}
+		}
+	}
+
+	&::before {
+		@media (min-width: @screen-md-min) {
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: @gray;
+			position: absolute;
+			top: 0;
+			left: 70px;
 		}
 	}
 }
