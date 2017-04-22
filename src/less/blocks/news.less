@@ -1,0 +1,28 @@
+.news {
+
+	&__container {
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		@media (min-width: @screen-md-min) {
+			padding-left: 100px;
+			padding-right: 30px;
+			max-width: 1900px;
+			display: flex;
+		}
+	}
+
+	&__column {
+
+		@media (min-width: @screen-md-min) {
+			width: 33.333%;
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
