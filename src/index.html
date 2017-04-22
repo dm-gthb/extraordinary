@@ -14,11 +14,12 @@
 	<!-- @@include('img/sprite-svg.svg') -->
 
 	<header class="page-header">
-			<div class="main-logo">
-        <img src="http://placehold.it/18x16" class="main-logo__img" alt="logo" width="18" height="16">
-        <h1 class="main-logo__text">Extraordinary</h1>
-      </div>
-      <div class="page-header__buttons">
+		<div class="main-logo">
+      <img src="http://placehold.it/18x16" class="main-logo__img" alt="logo" width="18" height="16">
+      <h1 class="main-logo__text">Extraordinary</h1>
+    </div>
+    <div class="page-header__buttons">
+      <div class="page-header__buttons-main" id="buttons-main">
      		<button class="btn btn--share">Share</button>
 				<div class="social social--dropdown">
           <a href="#" class="social__link">
@@ -46,8 +47,9 @@
       	<button class="btn btn--log-in">
       		<!-- <svg></svg> -->
       	</button>
-      	<button class="btn btn--toggler" id="toggler"><span class="btn__icon btn__icon--toggler"></span></button>
-      </div> <!-- /.page-header__buttons -->
+    	</div><!-- /.page-header__buttons-main -->
+    	<button class="btn btn--toggler" id="toggler"><span class="btn__icon btn__icon--toggler"></span></button>
+    </div> <!-- /.page-header__buttons -->
 	</header>
 
 	<nav class="main-nav">
@@ -124,15 +126,21 @@
 					<span class="main-nav__item-name">More</span>
 				</div>
 			</li>
+			<li class="main-nav__item">
+				<button class="btn btn--nav btn--settings">
+					<!-- <svg></svg> -->
+				</button>
+				<div class="main-nav__item-detailed">
+					<!-- <svg></svg> -->
+					<span class="main-nav__item-name">Settings</span>
+				</div>
+			</li>
 		</ul>
-		<button class="btn btn--nav"> <!-- button for nav settings -->
-			<!-- <svg></svg> -->
-		</button>
 	</nav>
 
-	<main>
-		<section class="news">
-			<div class="news__container">
+	<main> 
+		<section class="news"> 
+			<div class="news__container"> 
 					<div class="news__column">
 
 						<article class="article">
@@ -141,7 +149,7 @@
 								<span class="date date--iconed">24 July 2013</span>
 								<span class="comments comments--iconed">14 Comments</span>
 							</div>
-							<h2 class="article__title">All sail being set, he now cast loose the life-line, reserved.</h2>
+							<h2 class="article__title">All sail being set, he now cast loose the life-line, reserved.</h2> <!--может h1 -->
 							<p class="article__text">Soon all the boats but Starbuck's were dropped; all the boat-sails set all the paddles plying; with rippling swiftness, shooting to leeward; and Ahab heading the onset. A pale, death-glimmer lit up Fedallah's sunken eyes; a hideous motion.</p>
 						</article>
 						<aside class="advertising">
@@ -157,7 +165,7 @@
 								<span class="date date--iconed">24 July 2013</span>
 								<span class="comments comments--iconed">14 Comments</span>
 							</div>
-							<h2 class="article__title">Robin Thicke: Longest Hot 100 <br>Reign This Year</h2>
+							<h2 class="article__title">Robin Thicke: Longest Hot 100 <br>Reign This Year</h2> <!--может h1 -->
 							<p class="article__text">The line originally used in the fishery was of the best hemp, slightly vapoured with tar, not impregnated with it, as in the case of ordinary ropes; for while tar, as ordinarily used, makes the hemp more pliable to the rope-maker, Of late years the Manilla rope has in the American fishery almost entirely superseded hemp as.</p>
 						</article>
 						<article class="article">
@@ -166,7 +174,7 @@
 								<span class="date date--iconed">24 July 2013</span>
 								<span class="comments comments--iconed">14 Comments</span>
 							</div>
-							<h2 class="article__title">A Strange Brand of Happy</h2>
+							<h2 class="article__title">A Strange Brand of Happy</h2> <!--может h1 -->
 							<p class="article__text">An aimless bachelor loses his job and finds himself chasing the same girl (his new life coach) that his manipulative ex-boss is after as well. The boys are spurred on by a rag tag group of retirees in need of some action.</p>
 						</article>
 					</div>
@@ -178,7 +186,7 @@
 								<span class="date date--iconed">24 July 2013</span>
 								<span class="comments comments--iconed">14 Comments</span>
 							</div>
-							<h2 class="article__title">A-Rod, A Fraud, And A Waste Of Yankees Money, Public's Time</h2>
+							<h2 class="article__title">A-Rod, A Fraud, And A Waste Of Yankees Money, Public's Time</h2> <!--может h1 -->
 							<p class="article__text">Enough already. I can’t take it no more. Free us from enslavement to all this banter. OK, so my fit of anger this morning is not steroid-induced…though that would be fitting in light of recent discussions.Baseball talk of late has centered upon performance enhancing drugs. Biogenesis has become the new BALCO. A-Rod the new Barry Bonds. And all I hear from various media types are questions like.</p>
 						</article>
 						<article class="article">
@@ -187,7 +195,7 @@
 								<span class="date date--iconed">24 July 2013</span>
 								<span class="comments comments--iconed">14 Comments</span>
 							</div>
-							<h2 class="article__title">The whale-line is only two-thirds of an inch in thickness</h2>
+							<h2 class="article__title">The whale-line is only two-thirds of an inch in thickness</h2> <!--может h1 -->
 							<p class="article__text">At first sight, you would not think it so strong as it really is. By experiment its one and fifty yarns will each suspend a weight of one hundred and twenty pounds; so that the whole rope will bear a strain nearly equal to three tons.</p>
 						</article>
 					</div>
@@ -195,6 +203,7 @@
 		</section>
 	</main>
 
+<script src="js/script.min.js"></script>
 
 </body>
 </html>
