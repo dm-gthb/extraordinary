@@ -2,7 +2,7 @@
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 130px;
+	top: 128px;
 	background-color: @gray-light;
 	border-right: 1px solid @gray;
 
@@ -24,6 +24,10 @@
 		width: 70px;
 		height: 70px;
 		border-bottom: 1px solid @gray;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
 
 		&:last-child {
 			background-color: #fff;
@@ -36,5 +40,10 @@
 
 	&__item-detailed {
 		display: none;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
 	}
 }
