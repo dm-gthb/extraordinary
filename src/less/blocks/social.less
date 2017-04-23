@@ -1,5 +1,39 @@
 .social {
+
+	&__link {
+
+    &-img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
 	&--dropdown {
 		display: none;
+		.social__link {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: @gray-light;
+			border-right: 1px solid @gray;
+			border-bottom: 1px solid @gray;
+			text-decoration: none;
+		}
+		.social__link-img {
+			margin: 15px;
+		}
+		.social__name {
+			padding: 15px;
+			min-width: 130px;
+			border-left: 1px solid @gray;
+			font-family: @font-family--opensans;
+			font-weight: bold;
+			color: @text-gray--dark;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+	&--dropdown-active {
+		display: flex;
 	}
 }
