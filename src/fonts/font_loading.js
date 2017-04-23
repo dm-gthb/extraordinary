@@ -75,7 +75,13 @@ function loadFont(fontName, woffUrl, woff2Url) {
 
 // Вызываем функцию подгрузки
 loadFont(
-    'Open Sans_my',                      // название шрифта
-    '/css/font_opensans_woff.css?v=1',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
-    '/css/font_opensans_woff2.css?v=1'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+    'Open Sans',                      // название шрифта
+    '/css/fonts_woff.css?v=2',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=2'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
+  );
+
+loadFont(
+    'Montserrat',                      // название шрифта
+    '/css/fonts_woff.css?v=2',   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF
+    '/css/fonts_woff2.css?v=2'   // откуда с сервака тянуть CSS с закодированным в base64 форматом WOFF2
   );
