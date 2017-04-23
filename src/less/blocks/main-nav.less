@@ -28,9 +28,22 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
+		position: relative;
+		z-index: 5;
+
+		&:hover {
+			background-color: @blue-gray;
+			.main-nav__item-name {
+				display: flex;
+			}
+			svg {
+				fill: #fff;
+			}
+		}
 
 		&:last-child {
 			background-color: #fff;
+
 			@media (min-width: @screen-md-min) {
 				margin-top: 250px;
 				border-top: 1px solid @gray;
@@ -38,8 +51,20 @@
 		}
 	}
 
-	&__item-detailed {
+	&__item-name {
 		display: none;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 70px;
+		padding-right: 20px;
+		background-color:  @blue-gray;
+		height: 100%;
+		font-family: @font-family--montserrat;
+		font-weight: bold;
+		color: #fff;
+		text-transform: uppercase;
+		z-index: 4;
 	}
 
 	svg {
