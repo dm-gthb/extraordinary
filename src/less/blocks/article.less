@@ -50,6 +50,7 @@
 	&__overlay-text {
 		display: none;
 		font-family: @font-family--montserrat;
+		font-size: 22px;
 		font-weight: bold;
 		color: #fff;
 		text-transform: uppercase;
@@ -66,6 +67,10 @@
 		transform: translate(-50%, -50%);
 		z-index: 20;
 		white-space:nowrap;
+
+		@media (min-width: @screen-xs-min) {
+			font-size: 24px;
+		}
 
 		&::before {
 			content: '';
@@ -113,6 +118,7 @@
 	&__info {
 		font-family: @font-family--opensans;
 		font-size: @font-size--small;
+		font-weight: 600;
 		color: @text-gray--light;
 		margin-bottom: 10px;
 
@@ -143,6 +149,9 @@
 	}
 
 	&__comments {
+		text-decoration: none;
+		color: @text-gray--light;
+
 		&--iconed {
 			position: relative;
 			padding-left: 18px;
@@ -163,19 +172,22 @@
 
 	&__title {
 		font-family: @font-family--montserrat;
+		font-size: @font-size--h2;
 		font-weight: bold;
 		line-height: 1.2;
 		color: @text-gray--darken;
 		margin-bottom: 5px;
 		
 		@media (min-width: @screen-xs-min) {
+			font-size: @font-size--h2 + 2px;
 			margin-bottom: 15px;
 		}
 	}
 
 	&__text {
 		font-family: @font-family--opensans;
-		font-weight: normal;
+		font-size: @font-size--base;
+		font-weight: 400;
 		line-height: 1.6;
 		color: @text-gray;
 	}
