@@ -116,7 +116,15 @@
 		<div class="details">
 			<div class="details__container">
 				<div class="details__main-image">
-					<picture></picture>
+					<picture>
+				    <source
+				        media="(min-width: px)"
+				        srcset="img/detail-main-picture--xlg.jpg 1x,
+				                img/detail-main-picture--xlg.jpg 2x">
+				    <img
+				        src="img/detail-main-picture--md.jpg" alt=""
+				        srcset="img/detail-main-picture--md.jpg 2x">
+					</picture>
 					<div class="slider-controls"></div>
 				</div> <!-- /.details__main-image -->
 
@@ -128,11 +136,10 @@
 						</div>
 						<div class="general-info__item">
 							<h3 class="general-info__title">Comments</h3>
-							<span class="general-info__comments">14 Comments</span>
+							<a href="#" class="general-info__comments">14 Comments</a>
 						</div>
 						<div class="general-info__item">
 							<h3 class="general-info__title">Share</h3>
-
 							<div class="social">
 			          <a href="#" class="social__link">
 			            <svg class="social__link-img"><use xlink:href="#facebook"></use></svg>
@@ -160,7 +167,7 @@
 							<div class="story__description-column">
 								<p class="story__text">Of late years the Manilla rope has in the American fishery almost entirely superseded hemp as a material for whale-lines; for, though not so durable as hemp, it is stronger, and far more soft and elastic; and I will add (since there is an aesthetics in all things), is much more handsome and becoming to the boat, than hemp. Hemp is a dusky, dark fellow, a sort of Indian; but Manilla is as a golden-haired Circassian to behold.</p>
 								<figure class="story__figure-wrapper">
-									<img src="" alt="" class="story__img">
+									<img src="http://placehold.it/460x300" alt="" class="story__img">
 	  							<figcaption class="story__img-description">Of late years the Manilla rope has in the American fishery almostentirely superseded hemp as a material for whale-line</figcaption>
 								</figure>
 								<p class="story__text">The whale-line is only two-thirds of an inch in thickness. At first sight, you would not think it so strong as it really is. By experiment its one and fifty yarns will each suspend a weight of one hundred and twenty pounds; so that the whole rope will bear a strain nearly equal to three tons. In length, the common sperm whale-line measures something over two hundred fathoms. Towards the stern of the boat it is spirally coiled away in the tub, not like the worm-pipe of a still though, but so as to form one round, cheese-shaped mass of densely bedded "sheaves," or layers of concentric spiralizations, without any hollow but the "heart," or minute vertical tubeformed at the axis of the cheese. </p>

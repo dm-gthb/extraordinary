@@ -1,0 +1,40 @@
+.details {
+
+	&__container {
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 30px;
+		@media (min-width: @screen-md-min) {
+			padding-left: 100px;
+			padding-right: 130px;
+			max-width: 1900px;
+		}
+	}
+
+	&__main-image {
+		margin-bottom: 10px;
+		@media (min-width: @screen-md-min) {
+			margin-bottom: 35px;
+		}
+
+		picture {
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	&__text-content {	
+		width: 100%;
+		
+		@media (min-width: @screen-md-min) {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+}
