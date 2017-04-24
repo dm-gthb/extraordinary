@@ -1,5 +1,9 @@
 .article {
 	margin-bottom: 25px;
+	
+	@media (min-width: @screen-md-min) {
+		border-bottom: 5px solid transparent;
+	}
 
 	&__img-wrapper {
 		display: block;
@@ -50,7 +54,7 @@
 	&__overlay-text {
 		display: none;
 		font-family: @font-family--montserrat;
-		font-size: 22px;
+		font-size: 20px;
 		font-weight: bold;
 		color: #fff;
 		text-transform: uppercase;
@@ -69,7 +73,7 @@
 		white-space:nowrap;
 
 		@media (min-width: @screen-xs-min) {
-			font-size: 24px;
+			font-size: 22px;
 		}
 
 		&::before {
