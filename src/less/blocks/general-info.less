@@ -18,9 +18,14 @@
 
 	&__item {
 		margin-right: 20px;
+		position: relative;
+		line-height: 1;
 
 		&:last-child {
 			display: none;
+			&::after {
+				display: none;
+			}
 
 			@media (min-width: @screen-xs-min) {
 				display: block;
@@ -36,8 +41,20 @@
 		@media (min-width: @screen-md-min) {
 			padding-top: 15px;
 			padding-bottom: 15px;
-			border-bottom: 1px solid @gray;
 			margin-right: 0;
+		}
+
+		&::after {
+			@media (min-width: @screen-md-min) {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				content: '';
+				height: 1px;
+				width: 70%;
+				max-width: 200px;
+				background-color: @gray;
+			}	
 		}
 	}
 
@@ -46,6 +63,14 @@
 		font-weight: 700;
 		font-size: @font-size--small;
 		color: @text-gray--darken;
+
+		@media (min-width: @screen-md-min) {
+			margin-bottom: 5px;
+
+			&--share {
+				margin-bottom: 10px;
+			}
+		}
 	}
 
 	&__date,
@@ -57,7 +82,6 @@
 	}
 
 	&__date {
-		
 
 		&--iconed {
 			position: relative;
@@ -81,7 +105,6 @@
 	&__comments {
 		text-decoration: none;
 		
-
 		&--iconed {
 			position: relative;
 			padding-left: 18px;

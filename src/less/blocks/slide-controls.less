@@ -1,0 +1,30 @@
+.slide-controls {
+	display: none;
+	@media (min-width: @screen-md-min) {
+		display: block;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		border: 1px solid @gray;
+	}
+	
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		padding: 25px;
+		background: transparent;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid @gray;
+		cursor: pointer;
+		&:last-child {
+			border-bottom: none;
+		}
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}

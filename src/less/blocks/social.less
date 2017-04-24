@@ -19,13 +19,13 @@
 			justify-content: flex-start;
 			align-items: center;
 			background-color: @gray-light;
-			border-right: 1px solid @gray;
-			border-bottom: 1px solid @gray;
+			border: 1px solid @gray;
+			border-top: none;
 			text-decoration: none;
 			&:hover {
 				background-color: @gray;
-				border-right: 1px solid #fff;
-				border-bottom: 1px solid #fff;
+				border: 1px solid #e0dbdb;
+				border-top: none;
 			}
 		}
 		.social__link-img {
@@ -41,6 +41,9 @@
 			color: @text-gray--dark;
 			text-transform: uppercase;
 			text-decoration: none;
+			&:hover {
+				border-left: 1px solid #e0dbdb;
+			}
 		}
 	}
 }

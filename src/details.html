@@ -118,15 +118,29 @@
 				<div class="details__main-image">
 					<picture>
 				    <source
-				        media="(min-width: px)"
-				        srcset="img/detail-main-picture--xlg.jpg 1x,
-				                img/detail-main-picture--xlg.jpg 2x">
+			        media="(min-width: 1200px)"
+			        srcset="img/details__main-image-xlg.jpg 1x,
+			                img/details__main-image-xlg@2x.jpg 2x">
+				    <source
+			        media="(min-width: 992px)"
+			        srcset="img/details__main-image-md.jpg 1x,
+			                img/details__main-image-md@2x.jpg 2x">
+				    <source
+			        media="(min-width: 480px)"
+			        srcset="img/details__main-image-xs.jpg 1x,
+			                img/details__main-image-xs@2x.jpg 2x">
 				    <img
-				        src="img/detail-main-picture--md.jpg" alt=""
-				        srcset="img/detail-main-picture--md.jpg 2x">
+			        src="img/details__main-image-min.jpg" alt="title-picture"
+			        srcset="img/details__main-image-min@2x.jpg 2x">
 					</picture>
 					<div class="slider-controls"></div>
 				</div> <!-- /.details__main-image -->
+
+				<div class="slide-controls">
+					<button class="slide-controls__btn slide-controls__btn--close"><svg><use xlink:href="#cancel"></use></svg></button>
+					<button class="slide-controls__btn slide-controls__btn--prev"><svg><use xlink:href="#prev"></use></svg></button>
+					<button class="slide-controls__btn slide-controls__btn--next"><svg><use xlink:href="#next"></use></svg></button>
+				</div>
 
 				<div class="details__text-content">
 					<aside class="general-info">
@@ -139,7 +153,7 @@
 							<a href="#" class="general-info__comments">14 Comments</a>
 						</div>
 						<div class="general-info__item">
-							<h3 class="general-info__title">Share</h3>
+							<h3 class="general-info__title general-info__title--share">Share</h3>
 							<div class="social">
 			          <a href="#" class="social__link">
 			            <svg class="social__link-img"><use xlink:href="#facebook"></use></svg>
@@ -167,8 +181,10 @@
 							<div class="story__description-column">
 								<p class="story__text">Of late years the Manilla rope has in the American fishery almost entirely superseded hemp as a material for whale-lines; for, though not so durable as hemp, it is stronger, and far more soft and elastic; and I will add (since there is an aesthetics in all things), is much more handsome and becoming to the boat, than hemp. Hemp is a dusky, dark fellow, a sort of Indian; but Manilla is as a golden-haired Circassian to behold.</p>
 								<figure class="story__figure-wrapper">
-									<img src="http://placehold.it/460x300" alt="" class="story__img">
-	  							<figcaption class="story__img-description">Of late years the Manilla rope has in the American fishery almostentirely superseded hemp as a material for whale-line</figcaption>
+									<img class="story__img"
+										src="img/story-image.jpg" alt="story-image"
+		    						srcset="img/story-image@2x.jpg 2x">
+	  							<figcaption class="story__img-description">Of late years the Manilla rope has in the American fishery almostentirely superseded hemp as a material for <nobr>whale-line</nobr></figcaption>
 								</figure>
 								<p class="story__text">The whale-line is only two-thirds of an inch in thickness. At first sight, you would not think it so strong as it really is. By experiment its one and fifty yarns will each suspend a weight of one hundred and twenty pounds; so that the whole rope will bear a strain nearly equal to three tons. In length, the common sperm whale-line measures something over two hundred fathoms. Towards the stern of the boat it is spirally coiled away in the tub, not like the worm-pipe of a still though, but so as to form one round, cheese-shaped mass of densely bedded "sheaves," or layers of concentric spiralizations, without any hollow but the "heart," or minute vertical tubeformed at the axis of the cheese. </p>
 							</div>
@@ -182,10 +198,8 @@
 				</div> <!-- /.details__text-content -->
 			</div> <!-- /.details__container -->
 		</div> <!-- /.details -->
-
-		<aside class="comments"></aside>
 	</main>
-
+	
 <script src="js/script.min.js"></script>
 
 </body>
