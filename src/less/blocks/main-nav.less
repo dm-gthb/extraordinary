@@ -1,76 +1,76 @@
 .main-nav {
-	display: none;
-	position: absolute;
-	left: 0;
-	top: 128px;
-	background-color: @gray-light;
-	border-right: 1px solid @gray;
-	z-index: 5000;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 128px;
+  background-color: @gray-light;
+  border-right: 1px solid @gray;
+  z-index: 5000;
 
-	@media (min-width: @screen-md-min) {
-		display: block;
-		top: 80px;
-	}
+  @media (min-width: @screen-md-min) {
+    display: block;
+    top: 80px;
+  }
 
-	&--active {
-		display: block;
-	}
+  &--active {
+    display: block;
+  }
 
-	&__list {
-		list-style: none;
-		display: block;
-	}
+  &__list {
+    list-style: none;
+    display: block;
+  }
 
-	&__item {
-		width: 70px;
-		height: 70px;
-		border-bottom: 1px solid @gray;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		position: relative;
-		z-index: 5;
+  &__item {
+    width: 70px;
+    height: 70px;
+    border-bottom: 1px solid @gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
 
-		&:hover {
-			background-color: @blue-gray;
-			.main-nav__item-name {
-				display: flex;
-			}
-			svg {
-				fill: #fff;
-			}
-		}
+    &:hover {
+      background-color: @blue-gray;
+      .main-nav__item-name {
+        display: flex;
+      }
+      svg {
+        fill: #fff;
+      }
+    }
 
-		&:last-child {
-			background-color: #fff;
+    &:last-child {
+      background-color: #fff;
 
-			@media (min-width: @screen-md-min) {
-				margin-top: 250px;
-				border-top: 1px solid @gray;
-			}
-		}
-	}
+      @media (min-width: @screen-md-min) {
+        margin-top: 250px;
+        border-top: 1px solid @gray;
+      }
+    }
+  }
 
-	&__item-name {
-		display: none;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 70px;
-		padding-right: 20px;
-		background-color:  @blue-gray;
-		height: 100%;
-		font-family: @font-family--montserrat;
-		font-size: @font-size--base;
-		font-weight: bold;
-		color: #fff;
-		text-transform: uppercase;
-		z-index: 4;
-	}
+  &__item-name {
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    padding-right: 20px;
+    background-color:  @blue-gray;
+    height: 100%;
+    font-family: @font-family--montserrat;
+    font-size: @font-size--base;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 4;
+  }
 
-	svg {
-		width: 20px;
-		height: 20px;
-	}
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 }

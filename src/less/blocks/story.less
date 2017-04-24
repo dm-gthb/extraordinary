@@ -1,108 +1,108 @@
 .story {
-	@media (min-width: @screen-md-min) {
-		flex: 4 1 75%;
-	}
+  @media (min-width: @screen-md-min) {
+    flex: 4 1 75%;
+  }
 
-	&__title {
-		font-family: @font-family--montserrat;
-		font-weight: bold;
-		font-size: 40px;
-		line-height: 1;
-		color: @text-gray--darken;
-		margin-bottom: 20px;
+  &__title {
+    font-family: @font-family--montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    color: @text-gray--darken;
+    margin-bottom: 20px;
 
-		@media (min-width: @screen-xs-min) {
-			font-size: 46px;
-		}
+    @media (min-width: @screen-xs-min) {
+      font-size: 46px;
+    }
 
-		@media (min-width: @screen-xs-min) {
-			@font-size--h1;
-		}
-	}
+    @media (min-width: @screen-xs-min) {
+      @font-size--h1;
+    }
+  }
 
-	&__subtitle {
-		font-family: @font-family--opensans;
-		font-weight: 600;
-		font-size: @font-size--base-big;
-		line-height: 1.4;
-		color: @text-gray--darken;
-		margin-bottom: 15px;
+  &__subtitle {
+    font-family: @font-family--opensans;
+    font-weight: 600;
+    font-size: @font-size--base-big;
+    line-height: 1.4;
+    color: @text-gray--darken;
+    margin-bottom: 15px;
 
-		@media (min-width: @screen-xs-min) {
-			font-size: @font-size--base-big + 2px;
-			margin-bottom: 25px;
-		}
-	}
+    @media (min-width: @screen-xs-min) {
+      font-size: @font-size--base-big + 2px;
+      margin-bottom: 25px;
+    }
+  }
 
-	&__text {
-		font-family: @font-family--opensans;
-		font-weight: 400;
-		font-size: @font-size--base;
-		color: @text-gray;
-	}
+  &__text {
+    font-family: @font-family--opensans;
+    font-weight: 400;
+    font-size: @font-size--base;
+    color: @text-gray;
+  }
 
-	&__description {
-		@media (min-width: @screen-md-min) {
-			padding-right: 7%;
-			display: flex;
-		}
-	}
+  &__description {
+    @media (min-width: @screen-md-min) {
+      padding-right: 7%;
+      display: flex;
+    }
+  }
 
-	&__description-column {
-		flex-basis: 50%;
+  &__description-column {
+    flex-basis: 50%;
 
-		&:first-child {
-			@media (min-width: @screen-md-min) {
-				margin-right: 30px;
-			}
-		}
-	}
+    &:first-child {
+      @media (min-width: @screen-md-min) {
+        margin-right: 30px;
+      }
+    }
+  }
 
-	&__figure-wrapper {
-		margin: 25px 0;
-		width: 100%;
-		position: relative;
-	}
+  &__figure-wrapper {
+    margin: 25px 0;
+    width: 100%;
+    position: relative;
+  }
 
-	&__img {
-		display: block;
-		width: 100%;
-	}
+  &__img {
+    display: block;
+    width: 100%;
+  }
 
-	&__img-description {
-		position: absolute;
-		width: calc(100% - 10px);
-		bottom: 10px;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		-o-transform: translateX(-50%);
-		transform: translateX(-50%);
-		background-color:@green;
-		opacity: 0.9;
-		color: #fff;
-		font-family: @font-family--opensans;
-		font-weight: 800;
-		font-size: @font-size--small;
-		line-height: 1.5;
-		padding: 5px;
-		text-align: center;
+  &__img-description {
+    position: absolute;
+    width: calc(100% - 10px);
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color:@green;
+    opacity: 0.9;
+    color: #fff;
+    font-family: @font-family--opensans;
+    font-weight: 800;
+    font-size: @font-size--small;
+    line-height: 1.5;
+    padding: 5px;
+    text-align: center;
 
-		@media (min-width: @screen-md-min) {
-			width: calc(100% - 5px);
-			bottom: 5px;
-			padding: 2px;
-			font-size: @font-size--small - 2px;
-			line-height: 1.2;
-		}
+    @media (min-width: @screen-md-min) {
+      width: calc(100% - 5px);
+      bottom: 5px;
+      padding: 2px;
+      font-size: @font-size--small - 2px;
+      line-height: 1.2;
+    }
 
-		@media (min-width: @screen-lg-min) {
-			width: calc(100% - 10px);
-			bottom: 10px;
-			padding: 5px;
-			font-size: @font-size--small;
-			line-height: 1.5;
-		}
-	}
+    @media (min-width: @screen-lg-min) {
+      width: calc(100% - 10px);
+      bottom: 10px;
+      padding: 5px;
+      font-size: @font-size--small;
+      line-height: 1.5;
+    }
+  }
 }

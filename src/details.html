@@ -5,202 +5,201 @@
   <!--DEV  Вставка JS, который будет качать шрифт при первом посещении домена -->
   <script>@@include('fonts/font_loading.js')</script>
   <!--DEV  Резервное подключение CSS -файла с WOFF шрифтом на случай отключенного JS -->
-  <noscript><link rel="stylesheet" href="css/font_opensans_woff.css"></noscript>
+  <noscript><link rel="stylesheet" href="css/fonts_woff.css"></noscript>
 
   @@include('_include/page-head.html')
-  <title>Extraordinary</title>
+  <title>Details</title>
 </head>
 <body>
-	@@include('img/sprite-svg.svg')
+  @@include('img/sprite-svg.svg')
 
-	<header class="page-header">
-		<div class="main-logo">
+  <header class="page-header">
+    <div class="main-logo">
       <img src="img/logo.png" class="main-logo__img" alt="logo" width="18" height="16">
       <h1 class="main-logo__text">Extra<b>ordinary</b></h1>
     </div>
     <div class="page-header__buttons">
       <div class="page-header__buttons-main" id="buttons-main">
-     		<button class="btn btn--share">
-     			Share
-					<div class="social social--dropdown">
-	          <a href="#" class="social__link">
-	            <svg class="social__link-img"><use xlink:href="#facebook"></use></svg>
-	            <span class="social__name">Facebook</span>
-	          </a>
-	          <a href="#" class="social__link">
-	            <svg class="social__link-img"><use xlink:href="#twitter"></use></svg>
-	            <span class="social__name">Twitter</span>
-	          </a>
-	          <a href="#" class="social__link">
-	            <svg class="social__link-img"><use xlink:href="#google"></use></svg>
-	            <span class="social__name">Google+</span>
-	          </a>
-	          <a href="#" class="social__link">
-	            <svg class="social__link-img"><use xlink:href="#pinterest"></use></svg>
-	            <span class="social__name">Pinterest</span>
-	          </a>
-      		</div> <!-- /.social--dropdown -->
-      	</button>
+         <button class="btn btn--share">
+           Share
+          <div class="social social--dropdown">
+            <a href="#" class="social__link">
+              <svg class="social__link-img"><use xlink:href="#facebook"></use></svg>
+              <span class="social__name">Facebook</span>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__link-img"><use xlink:href="#twitter"></use></svg>
+              <span class="social__name">Twitter</span>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__link-img"><use xlink:href="#google"></use></svg>
+              <span class="social__name">Google+</span>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="social__link-img"><use xlink:href="#pinterest"></use></svg>
+              <span class="social__name">Pinterest</span>
+            </a>
+          </div> <!-- /.social--dropdown -->
+        </button>
 
-      	<button class="btn btn--search">
-      		<svg><use xlink:href="#search"></use></svg>
-      	</button>
+        <button class="btn btn--search">
+          <svg><use xlink:href="#search"></use></svg>
+        </button>
 
-      	<button class="btn btn--log-in">
-      		<svg><use xlink:href="#user"></use></svg>
-      	</button>
-    	</div><!-- /.page-header__buttons-main -->
-    	<button class="btn btn--toggler" id="toggler"><span class="btn__icon btn__icon--toggler"></span></button>
+        <button class="btn btn--log-in">
+          <svg><use xlink:href="#user"></use></svg>
+        </button>
+      </div><!-- /.page-header__buttons-main -->
+      <button class="btn btn--toggler" id="toggler"><span class="btn__icon btn__icon--toggler"></span></button>
     </div> <!-- /.page-header__buttons -->
-	</header>
+  </header>
 
-	<nav class="main-nav" id="main-nav">
-		<ul class="main-nav__list">
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#palette"></use></svg>
-					<span class="main-nav__item-name">Art</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#music"></use></svg>
-					<span class="main-nav__item-name">Music</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#camera"></use></svg>
-					<span class="main-nav__item-name">Photo</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#video"></use></svg>
-					<span class="main-nav__item-name">Cinema</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#suitcase"></use></svg>
-					<span class="main-nav__item-name">Business</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#air"></use></svg>
-					<span class="main-nav__item-name">Travel</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#bag"></use></svg>
-					<span class="main-nav__item-name">Item</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#plus"></use></svg>
-					<span class="main-nav__item-name">More</span>
-				</a>
-			</li>
-			<li class="main-nav__item">
-				<a href="#" class="main-nav__link">
-					<svg><use xlink:href="#cog"></use></svg>
-				</a>
-			</li>
-		</ul>
-	</nav>
+  <nav class="main-nav" id="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#palette"></use></svg>
+          <span class="main-nav__item-name">Art</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#music"></use></svg>
+          <span class="main-nav__item-name">Music</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#camera"></use></svg>
+          <span class="main-nav__item-name">Photo</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#video"></use></svg>
+          <span class="main-nav__item-name">Cinema</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#suitcase"></use></svg>
+          <span class="main-nav__item-name">Business</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#air"></use></svg>
+          <span class="main-nav__item-name">Travel</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#bag"></use></svg>
+          <span class="main-nav__item-name">Item</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#plus"></use></svg>
+          <span class="main-nav__item-name">More</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#" class="main-nav__link">
+          <svg><use xlink:href="#cog"></use></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-	<main> 
-		<div class="details">
-			<div class="details__container">
-				<div class="details__main-image">
-					<picture>
-				    <source
-			        media="(min-width: 1200px)"
-			        srcset="img/details__main-image-xlg.jpg 1x,
-			                img/details__main-image-xlg@2x.jpg 2x">
-				    <source
-			        media="(min-width: 992px)"
-			        srcset="img/details__main-image-md.jpg 1x,
-			                img/details__main-image-md@2x.jpg 2x">
-				    <source
-			        media="(min-width: 480px)"
-			        srcset="img/details__main-image-xs.jpg 1x,
-			                img/details__main-image-xs@2x.jpg 2x">
-				    <img
-			        src="img/details__main-image-min.jpg" alt="title-picture"
-			        srcset="img/details__main-image-min@2x.jpg 2x">
-					</picture>
-					<div class="slider-controls"></div>
-				</div> <!-- /.details__main-image -->
+  <main> 
+    <div class="details">
+      <div class="details__container">
+        <div class="details__main-image">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/details__main-image-xlg.jpg 1x,
+                      img/details__main-image-xlg@2x.jpg 2x">
+            <source
+              media="(min-width: 992px)"
+              srcset="img/details__main-image-md.jpg 1x,
+                      img/details__main-image-md@2x.jpg 2x">
+            <source
+              media="(min-width: 480px)"
+              srcset="img/details__main-image-xs.jpg 1x,
+                      img/details__main-image-xs@2x.jpg 2x">
+            <img
+              src="img/details__main-image-min.jpg" alt="title-picture"
+              srcset="img/details__main-image-min@2x.jpg 2x">
+          </picture>
+          <div class="slider-controls"></div>
+        </div> <!-- /.details__main-image -->
 
-				<div class="slide-controls">
-					<button class="slide-controls__btn slide-controls__btn--close"><svg><use xlink:href="#cancel"></use></svg></button>
-					<button class="slide-controls__btn slide-controls__btn--prev"><svg><use xlink:href="#prev"></use></svg></button>
-					<button class="slide-controls__btn slide-controls__btn--next"><svg><use xlink:href="#next"></use></svg></button>
-				</div>
+        <div class="slide-controls">
+          <button class="slide-controls__btn slide-controls__btn--close"><svg><use xlink:href="#cancel"></use></svg></button>
+          <button class="slide-controls__btn slide-controls__btn--prev"><svg><use xlink:href="#prev"></use></svg></button>
+          <button class="slide-controls__btn slide-controls__btn--next"><svg><use xlink:href="#next"></use></svg></button>
+        </div>
 
-				<div class="details__text-content">
-					<aside class="general-info">
-						<div class="general-info__item">
-							<h3 class="general-info__title">Date</h3>
-							<span class="general-info__date">24 July 2013</span>
-						</div>
-						<div class="general-info__item">
-							<h3 class="general-info__title">Comments</h3>
-							<a href="#" class="general-info__comments">14 Comments</a>
-						</div>
-						<div class="general-info__item">
-							<h3 class="general-info__title general-info__title--share">Share</h3>
-							<div class="social">
-			          <a href="#" class="social__link">
-			            <svg class="social__link-img"><use xlink:href="#facebook"></use></svg>
-			          </a>
-			          <a href="#" class="social__link">
-			            <svg class="social__link-img"><use xlink:href="#twitter"></use></svg>
-			          </a>
-			          <a href="#" class="social__link">
-			            <svg class="social__link-img"><use xlink:href="#google"></use></svg>
-			          </a>
-			          <a href="#" class="social__link">
-			            <svg class="social__link-img"><use xlink:href="#pinterest"></use></svg>
-			          </a>
-		      		</div> <!-- /.social -->
-						</div>
-					</aside>
+        <div class="details__text-content">
+          <aside class="general-info">
+            <div class="general-info__item">
+              <h3 class="general-info__title">Date</h3>
+              <span class="general-info__date">24 July 2013</span>
+            </div>
+            <div class="general-info__item">
+              <h3 class="general-info__title">Comments</h3>
+              <a href="#" class="general-info__comments">14 Comments</a>
+            </div>
+            <div class="general-info__item">
+              <h3 class="general-info__title general-info__title--share">Share</h3>
+              <div class="social">
+                <a href="#" class="social__link">
+                  <svg class="social__link-img"><use xlink:href="#facebook"></use></svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__link-img"><use xlink:href="#twitter"></use></svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__link-img"><use xlink:href="#google"></use></svg>
+                </a>
+                <a href="#" class="social__link">
+                  <svg class="social__link-img"><use xlink:href="#pinterest"></use></svg>
+                </a>
+              </div> <!-- /.social -->
+            </div>
+          </aside>
 
-					<article class="story">
-						<header class="story__header">
-							<h2 class="story__title">All sail being set, he now cast loose the life-line, reserved.</h2>
-							<p class="story__subtitle">With reference to the whaling scene shortly to be described, as well as for the better understanding of all similar scenes elsewhere presented, I have here to speak of the magical, sometimes horrible whale-line.</p>
-						</header>
+          <article class="story">
+            <header class="story__header">
+              <h2 class="story__title">All sail being set, he now cast loose the life-line, reserved.</h2>
+              <p class="story__subtitle">With reference to the whaling scene shortly to be described, as well as for the better understanding of all similar scenes elsewhere presented, I have here to speak of the magical, sometimes horrible whale-line.</p>
+            </header>
 
-						<div class="story__description">
-							<div class="story__description-column">
-								<p class="story__text">Of late years the Manilla rope has in the American fishery almost entirely superseded hemp as a material for whale-lines; for, though not so durable as hemp, it is stronger, and far more soft and elastic; and I will add (since there is an aesthetics in all things), is much more handsome and becoming to the boat, than hemp. Hemp is a dusky, dark fellow, a sort of Indian; but Manilla is as a golden-haired Circassian to behold.</p>
-								<figure class="story__figure-wrapper">
-									<img class="story__img"
-										src="img/story-image.jpg" alt="story-image"
-		    						srcset="img/story-image@2x.jpg 2x">
-	  							<figcaption class="story__img-description">Of late years the Manilla rope has in the American fishery almostentirely superseded hemp as a material for <nobr>whale-line</nobr></figcaption>
-								</figure>
-								<p class="story__text">The whale-line is only two-thirds of an inch in thickness. At first sight, you would not think it so strong as it really is. By experiment its one and fifty yarns will each suspend a weight of one hundred and twenty pounds; so that the whole rope will bear a strain nearly equal to three tons. In length, the common sperm whale-line measures something over two hundred fathoms. Towards the stern of the boat it is spirally coiled away in the tub, not like the worm-pipe of a still though, but so as to form one round, cheese-shaped mass of densely bedded "sheaves," or layers of concentric spiralizations, without any hollow but the "heart," or minute vertical tubeformed at the axis of the cheese. </p>
-							</div>
-							<div class="story__description-column">
-								<p class="story__text">Soon all the boats but Starbuck's were dropped; all the boat-sails set all the paddles plying; with rippling swiftness, shooting to leeward; and Ahab heading the onset. A pale, death-glimmer lit up Fedallah's sunken eyes; a hideous motion. The line originally used in the fishery was of the best hemp slightly vapoured with tar, not impregnated with it, as in the case of ordinary ropes; for while tar, as ordinarily used, makes the hemp more pliable to the rope-maker, and also renders the rope itself more convenient to the sailor for common ship use; yet, not only would the ordinary quantity too much stiffen the whale-line for the close coiling to which it must be subjected; but as most seamen are beginning to learn, tar in general by no means adds to the rope's durability or strength, however much it may give it compactness and gloss.</p>
-								<p class="story__text">Both ends of the line are exposed; the lower end terminating in an eye-splice or loop coming up from the bottom against the side of the tub, and hanging over its edge completely disengaged from everything. This arrangement of the lower end is necessary on two accounts. First: In order to facilitate the fastening to it of an additional line from a neighboring boat, in case the stricken whale should sound so deep as to threaten to carry off the entire line originally attached to the harpoon. In these instances, the whale of courseis shifted like a mug of ale, as it were, from the one boat to the other; though the first boat always hovers at hand to assist its consort. Second: This arrangement is indispensable for common safety's sake.As the least tangle or kink in the coiling would, in running out, infallibly take somebody's arm, leg, or entire body off, the utmost precaution is used in stowing the line in its tub. Some harpooneers will consume almost an entire morning in this business, carrying the line high aloft and then reeving it downwards through a block towards the tub, so as in the act of coiling to free it from all possible wrinkles and twists.</p>
-							</div>
-						</div>
-					</article>
+            <div class="story__description">
+              <div class="story__description-column">
+                <p class="story__text">Of late years the Manilla rope has in the American fishery almost entirely superseded hemp as a material for whale-lines; for, though not so durable as hemp, it is stronger, and far more soft and elastic; and I will add (since there is an aesthetics in all things), is much more handsome and becoming to the boat, than hemp. Hemp is a dusky, dark fellow, a sort of Indian; but Manilla is as a golden-haired Circassian to behold.</p>
+                <figure class="story__figure-wrapper">
+                  <img class="story__img"
+                    src="img/story-image.jpg" alt="story-image"
+                    srcset="img/story-image@2x.jpg 2x">
+                  <figcaption class="story__img-description">Of late years the Manilla rope has in the American fishery almostentirely superseded hemp as a material for <nobr>whale-line</nobr></figcaption>
+                </figure>
+                <p class="story__text">The whale-line is only two-thirds of an inch in thickness. At first sight, you would not think it so strong as it really is. By experiment its one and fifty yarns will each suspend a weight of one hundred and twenty pounds; so that the whole rope will bear a strain nearly equal to three tons. In length, the common sperm whale-line measures something over two hundred fathoms. Towards the stern of the boat it is spirally coiled away in the tub, not like the worm-pipe of a still though, but so as to form one round, cheese-shaped mass of densely bedded "sheaves," or layers of concentric spiralizations, without any hollow but the "heart," or minute vertical tubeformed at the axis of the cheese. </p>
+              </div>
+              <div class="story__description-column">
+                <p class="story__text">Soon all the boats but Starbuck's were dropped; all the boat-sails set all the paddles plying; with rippling swiftness, shooting to leeward; and Ahab heading the onset. A pale, death-glimmer lit up Fedallah's sunken eyes; a hideous motion. The line originally used in the fishery was of the best hemp slightly vapoured with tar, not impregnated with it, as in the case of ordinary ropes; for while tar, as ordinarily used, makes the hemp more pliable to the rope-maker, and also renders the rope itself more convenient to the sailor for common ship use; yet, not only would the ordinary quantity too much stiffen the whale-line for the close coiling to which it must be subjected; but as most seamen are beginning to learn, tar in general by no means adds to the rope's durability or strength, however much it may give it compactness and gloss.</p>
+                <p class="story__text">Both ends of the line are exposed; the lower end terminating in an eye-splice or loop coming up from the bottom against the side of the tub, and hanging over its edge completely disengaged from everything. This arrangement of the lower end is necessary on two accounts. First: In order to facilitate the fastening to it of an additional line from a neighboring boat, in case the stricken whale should sound so deep as to threaten to carry off the entire line originally attached to the harpoon. In these instances, the whale of courseis shifted like a mug of ale, as it were, from the one boat to the other; though the first boat always hovers at hand to assist its consort. Second: This arrangement is indispensable for common safety's sake.As the least tangle or kink in the coiling would, in running out, infallibly take somebody's arm, leg, or entire body off, the utmost precaution is used in stowing the line in its tub. Some harpooneers will consume almost an entire morning in this business, carrying the line high aloft and then reeving it downwards through a block towards the tub, so as in the act of coiling to free it from all possible wrinkles and twists.</p>
+              </div>
+            </div>
+          </article>
+        </div> <!-- /.details__text-content -->
+      </div> <!-- /.details__container -->
+    </div> <!-- /.details -->
+  </main>
 
-				</div> <!-- /.details__text-content -->
-			</div> <!-- /.details__container -->
-		</div> <!-- /.details -->
-	</main>
-	
-<script src="js/script.min.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 </html>

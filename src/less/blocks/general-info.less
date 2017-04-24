@@ -1,125 +1,125 @@
 .general-info {
-	display: flex;
-	justify-content: flex-start;
-	margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
 
-	@media (min-width: @screen-xs-min) {
-		justify-content: space-between;
-	}
+  @media (min-width: @screen-xs-min) {
+    justify-content: space-between;
+  }
 
-	@media (min-width: @screen-md-min) {
-		flex-direction: column;
-		justify-content: flex-start;
-		text-align: right;
-		flex: 1 1 25%;
-		margin-right: 30px;
-		margin-bottom: 0;
-	}
+  @media (min-width: @screen-md-min) {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    flex: 1 1 25%;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 
-	&__item {
-		margin-right: 20px;
-		position: relative;
-		line-height: 1;
+  &__item {
+    margin-right: 20px;
+    position: relative;
+    line-height: 1;
 
-		&:last-child {
-			display: none;
-			&::after {
-				display: none;
-			}
+    &:last-child {
+      display: none;
+      &::after {
+        display: none;
+      }
 
-			@media (min-width: @screen-xs-min) {
-				display: block;
-			}
-		}
+      @media (min-width: @screen-xs-min) {
+        display: block;
+      }
+    }
 
-		&:first-child {
-			@media (min-width: @screen-md-min) {
-				padding-top: 0;
-			}
-		}
-		
-		@media (min-width: @screen-md-min) {
-			padding-top: 15px;
-			padding-bottom: 15px;
-			margin-right: 0;
-		}
+    &:first-child {
+      @media (min-width: @screen-md-min) {
+        padding-top: 0;
+      }
+    }
+    
+    @media (min-width: @screen-md-min) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-right: 0;
+    }
 
-		&::after {
-			@media (min-width: @screen-md-min) {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				content: '';
-				height: 1px;
-				width: 70%;
-				max-width: 200px;
-				background-color: @gray;
-			}	
-		}
-	}
+    &::after {
+      @media (min-width: @screen-md-min) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        content: '';
+        height: 1px;
+        width: 70%;
+        max-width: 200px;
+        background-color: @gray;
+      }  
+    }
+  }
 
-	&__title {
-		font-family: @font-family--opensans;
-		font-weight: 700;
-		font-size: @font-size--small;
-		color: @text-gray--darken;
+  &__title {
+    font-family: @font-family--opensans;
+    font-weight: 700;
+    font-size: @font-size--small;
+    color: @text-gray--darken;
 
-		@media (min-width: @screen-md-min) {
-			margin-bottom: 5px;
+    @media (min-width: @screen-md-min) {
+      margin-bottom: 5px;
 
-			&--share {
-				margin-bottom: 10px;
-			}
-		}
-	}
+      &--share {
+        margin-bottom: 10px;
+      }
+    }
+  }
 
-	&__date,
-	&__comments {
-		font-family: @font-family--opensans;
-		font-size: @font-size--small;
-		font-weight: 600;
-		color: @text-gray--light;
-	}
+  &__date,
+  &__comments {
+    font-family: @font-family--opensans;
+    font-size: @font-size--small;
+    font-weight: 600;
+    color: @text-gray--light;
+  }
 
-	&__date {
+  &__date {
 
-		&--iconed {
-			position: relative;
-			padding-left: 18px;
-			margin-right: 20px;
+    &--iconed {
+      position: relative;
+      padding-left: 18px;
+      margin-right: 20px;
 
-			&::before {
-				position: absolute;
-				top: 2px;
-				left: 0;
-				content: '';
-				width: 13px;
-				height: 13px;
-				background-image: url("../../img/sprite.png");
-				background-position: -35px -5px;
-				background-repeat: no-repeat;
-			}
-		}
-	}
+      &::before {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        content: '';
+        width: 13px;
+        height: 13px;
+        background-image: url("../../img/sprite.png");
+        background-position: -35px -5px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 
-	&__comments {
-		text-decoration: none;
-		
-		&--iconed {
-			position: relative;
-			padding-left: 18px;
+  &__comments {
+    text-decoration: none;
+    
+    &--iconed {
+      position: relative;
+      padding-left: 18px;
 
-			&::before {
-				position: absolute;
-				top: 3px;
-				left: 0;
-				content: '';
-				width: 14px;
-				height: 13px;
-				background-image: url("../../img/sprite.png");
-				background-position: -5px -28px;
-				background-repeat: no-repeat;
-			}
-		}
-	}
+      &::before {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        content: '';
+        width: 14px;
+        height: 13px;
+        background-image: url("../../img/sprite.png");
+        background-position: -5px -28px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
